@@ -1,3 +1,12 @@
+buildscript {
+    ext.kotlin_version = '1.4.30'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
 plugins {
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE' apply false
 	id 'io.spring.nohttp' version '0.0.5.RELEASE'
@@ -291,7 +300,7 @@ configure(allprojects) { project ->
 		}
 		allprojects {
 			repositories {
-				maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+				maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
 			}
 		}
 		repositories {
