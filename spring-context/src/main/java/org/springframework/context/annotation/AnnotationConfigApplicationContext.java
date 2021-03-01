@@ -101,6 +101,7 @@ public class AnnotationConfigApplicationContext extends GenericApplicationContex
 	 */
 	public AnnotationConfigApplicationContext(String... basePackages) {
 		this();
+		//扫描包
 		scan(basePackages);
 		refresh();
 	}

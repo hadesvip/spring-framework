@@ -586,15 +586,10 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 	/**
 	 * spring 容器初始化的核心方法,是spring容器初始化的核心流程
-	 *
-	 *
-	 * applicationContext子类对象：
-	 * 1. ClassPathXmlApplicationContext
-	 * 2. FileSystemXmlApplicationContext
-	 * 3. AnnotationConfigApplicationContext
-	 * 4. EmbeddedWebApplicationContext(springboot,不在spring-framework中)
-	 *
-	 *
+	 * <p>
+	 * <p>
+	 * applicationContext子类对象： 1. ClassPathXmlApplicationContext 2. FileSystemXmlApplicationContext
+	 * 3. AnnotationConfigApplicationContext 4. EmbeddedWebApplicationContext(springboot,不在spring-framework中)
 	 *
 	 * @throws BeansException
 	 * @throws IllegalStateException
@@ -610,7 +605,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 			// Tell the subclass to refresh the internal bean factory.
 			//1. 创建工厂
-			//2.解析xml
+			//2.解析xml或者注解的方式或者...
 			//3.将解析出来的xml封装成BeanDefinition对象
 			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
