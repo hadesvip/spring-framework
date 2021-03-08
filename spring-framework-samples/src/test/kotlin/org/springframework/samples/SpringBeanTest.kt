@@ -10,10 +10,9 @@ class SpringBeanTest {
 	@Test
 	fun xmlApplicationContextTest() {
 		val applicationContext = ClassPathXmlApplicationContext("spring-bean.xml")
-		println("获取applicationContext对象:$applicationContext")
+//		println("获取applicationContext对象:$applicationContext")
 
-		val userService = applicationContext.getBean(UserService::class.java);
-		print(userService)
+//		val userService = applicationContext.getBean(UserService::class.java);
 	}
 
 	@Test
