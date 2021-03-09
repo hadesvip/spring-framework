@@ -22,6 +22,8 @@ class SpringBeanTest {
 		val beanInitLifeCycle = applicationContext.getBean(BeanInitLifeCycle::class.java)
 		println("beanInitLiftCycle值:$beanInitLifeCycle")
 
+		//销毁上下文
+		applicationContext.destroy();
 	}
 
 

@@ -1,5 +1,6 @@
 package org.springframework.samples.component
 
+import org.springframework.beans.factory.DisposableBean
 import org.springframework.beans.factory.InitializingBean
 import org.springframework.stereotype.Component
 import javax.annotation.PostConstruct
@@ -8,7 +9,7 @@ import javax.annotation.PostConstruct
  * bean初始化生命周期
  * @author wangyong
  */
-class BeanInitLifeCycle : InitializingBean {
+class BeanInitLifeCycle : InitializingBean, DisposableBean {
 
 	init {
 		println("构造函数")
@@ -32,5 +33,8 @@ class BeanInitLifeCycle : InitializingBean {
 		println("afterPropertiesSet")
 	}
 
+	override fun destroy() {
+		println("销毁BeanInitLifeCycle")
+	}
 
 }
