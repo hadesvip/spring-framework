@@ -14,7 +14,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testFixturesApi("org.junit.jupiter:junit-jupiter-api")
     testFixturesImplementation("org.assertj:assertj-core")
-//    implementation("org.jboss.spec.javax.annotation:jboss-annotations-api_1.3_spec:2.0.1.Final")
+    implementation  'javax.annotation:javax.annotation-api'
 }
 
 sourceSets {

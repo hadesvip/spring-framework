@@ -4,9 +4,7 @@ import org.springframework.beans.factory.InitializingBean
 import org.springframework.samples.domain.dto.UserDTO
 import org.springframework.samples.service.UserService
 import org.springframework.stereotype.Service
-import javax.annotation.PostConstruct
 
-@Service
 class UserServiceImpl :UserService, InitializingBean {
 
 	override fun getUser(userId: Int): UserDTO {
@@ -14,7 +12,7 @@ class UserServiceImpl :UserService, InitializingBean {
 	}
 
 
-	@PostConstruct
+//	@PostConstruct
 	fun postConstruct() {
 		println("PostConstruct")
 	}
