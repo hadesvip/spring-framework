@@ -107,7 +107,7 @@ import org.springframework.util.StringUtils;
  * of the {@link org.springframework.beans.factory.ListableBeanFactory} and
  * {@link BeanDefinitionRegistry} interfaces, which represent the API and SPI
  * view of such a factory, respectively.
- *
+ * 综合AbstractBeanFactory并对接口AutowireCapableBeanFactory方法进行实现
  * @author Rod Johnson
  * @author Juergen Hoeller
  * @author Rob Harrop
