@@ -19,11 +19,16 @@ class SpringBeanTest {
 	@Test
 	fun applicationContextTest() {
 		val applicationContext = AnnotationConfigApplicationContext("org.springframework.samples")
-		val beanInitLifeCycle = applicationContext.getBean(BeanInitLifeCycle::class.java)
-		println("beanInitLiftCycle值:$beanInitLifeCycle")
+		val beanInitLifeCycle1 = applicationContext.getBean("beanInitLifeCycle1")
+		val beanInitLifeCycle2 = applicationContext.getBean("beanInitLifeCycle2")
+		println(beanInitLifeCycle1)
+		println(beanInitLifeCycle2)
+
+//		val beanInitLifeCycle = applicationContext.getBean(BeanInitLifeCycle::class.java)
+//		println("beanInitLiftCycle值:$beanInitLifeCycle")
 
 		//销毁上下文
-		applicationContext.destroy();
+//		applicationContext.destroy();
 	}
 
 

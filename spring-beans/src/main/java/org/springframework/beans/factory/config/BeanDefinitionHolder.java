@@ -39,10 +39,19 @@ import org.springframework.util.StringUtils;
  */
 public class BeanDefinitionHolder implements BeanMetadataElement {
 
+	/**
+	 * bean的实例描述类(类似于Class描述java对象实例)
+	 */
 	private final BeanDefinition beanDefinition;
 
+	/**
+	 * bean的名称
+	 */
 	private final String beanName;
 
+	/**
+	 * 别名数组
+	 */
 	@Nullable
 	private final String[] aliases;
 

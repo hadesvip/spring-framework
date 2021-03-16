@@ -6,8 +6,8 @@
 <!--	<bean id="userService" class="org.springframework.samples.service.impl.UserServiceImpl"-->
 <!--			init-method="initMethod"/>-->
 
-	<bean id="beanInitLifeCycle" class="org.springframework.samples.BeanInitLifeCycle"
-	init-method="initMethod"/>
+<!--	<bean id="beanInitLifeCycle" class="org.springframework.samples.BeanInitLifeCycle"-->
+<!--	init-method="initMethod"/>-->
 
 
 
