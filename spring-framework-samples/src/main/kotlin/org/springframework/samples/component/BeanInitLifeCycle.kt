@@ -37,4 +37,7 @@ class BeanInitLifeCycle : InitializingBean, DisposableBean {
 		println("销毁BeanInitLifeCycle")
 	}
 
+
+	var className:String = ""
+
 }

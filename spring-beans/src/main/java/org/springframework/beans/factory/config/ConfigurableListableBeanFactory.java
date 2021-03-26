@@ -46,6 +46,8 @@ public interface ConfigurableListableBeanFactory
 	 * Ignore the given dependency type for autowiring:
 	 * for example, String. Default is none.
 	 * @param type the dependency type to ignore
+	 *
+	 * 忽略自动装配依赖类型
 	 */
 	void ignoreDependencyType(Class<?> type);
 
@@ -59,6 +61,7 @@ public interface ConfigurableListableBeanFactory
 	 * @param ifc the dependency interface to ignore
 	 * @see org.springframework.beans.factory.BeanFactoryAware
 	 * @see org.springframework.context.ApplicationContextAware
+	 * 忽略自动装配依赖接口
 	 */
 	void ignoreDependencyInterface(Class<?> ifc);
 
