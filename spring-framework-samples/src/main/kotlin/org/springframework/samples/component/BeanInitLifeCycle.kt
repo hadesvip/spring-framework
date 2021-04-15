@@ -9,7 +9,7 @@ import javax.annotation.PostConstruct
  * bean初始化生命周期
  * @author wangyong
  */
-class BeanInitLifeCycle : InitializingBean, DisposableBean {
+class BeanInitLifeCycle : InitializingBean {
 
 	init {
 		println("构造函数")
@@ -33,8 +33,6 @@ class BeanInitLifeCycle : InitializingBean, DisposableBean {
 		println("afterPropertiesSet")
 	}
 
-	override fun destroy() {
-		println("销毁BeanInitLifeCycle")
-	}
+	var className: String = ""
 
 }

@@ -46,6 +46,8 @@ public interface ConfigurableListableBeanFactory
 	 * Ignore the given dependency type for autowiring:
 	 * for example, String. Default is none.
 	 * @param type the dependency type to ignore
+	 *
+	 * 忽略自动装配依赖类型
 	 */
 	void ignoreDependencyType(Class<?> type);
 
@@ -59,6 +61,7 @@ public interface ConfigurableListableBeanFactory
 	 * @param ifc the dependency interface to ignore
 	 * @see org.springframework.beans.factory.BeanFactoryAware
 	 * @see org.springframework.context.ApplicationContextAware
+	 * 忽略自动装配依赖接口
 	 */
 	void ignoreDependencyInterface(Class<?> ifc);
 
@@ -128,6 +131,8 @@ public interface ConfigurableListableBeanFactory
 	 * <p>Typically triggered after changes to the original bean definitions,
 	 * e.g. after applying a {@link BeanFactoryPostProcessor}. Note that metadata
 	 * for beans which have already been created at this point will be kept around.
+	 *  清除BeanDefinition缓存
+	 *
 	 * @since 4.2
 	 * @see #getBeanDefinition
 	 * @see #getMergedBeanDefinition
@@ -138,6 +143,7 @@ public interface ConfigurableListableBeanFactory
 	 * Freeze all bean definitions, signalling that the registered bean definitions
 	 * will not be modified or post-processed any further.
 	 * <p>This allows the factory to aggressively cache bean definition metadata.
+	 * 冻结BeanDefinition
 	 */
 	void freezeConfiguration();
 
@@ -155,6 +161,8 @@ public interface ConfigurableListableBeanFactory
 	 * @throws BeansException if one of the singleton beans could not be created.
 	 * Note: This may have left the factory with some beans already initialized!
 	 * Call {@link #destroySingletons()} for full cleanup in this case.
+	 *
+	 * 实例化所有的单例bean
 	 * @see #destroySingletons()
 	 */
 	void preInstantiateSingletons() throws BeansException;
