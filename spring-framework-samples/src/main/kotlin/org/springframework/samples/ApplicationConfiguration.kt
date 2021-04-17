@@ -5,6 +5,7 @@ import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
 import org.springframework.samples.component.BeanInitLifeCycle
 import org.springframework.samples.component.CustomBeanFactoryPostProcessor
+import org.springframework.samples.component.UserServiceFactory
 import java.util.*
 
 @Configuration
@@ -21,5 +22,11 @@ open class ApplicationConfiguration {
 	open fun customBeanFactoryPostProcessor(): CustomBeanFactoryPostProcessor?{
 		return CustomBeanFactoryPostProcessor()
 
+	}
+
+
+
+	open fun userServiceFactory(): UserServiceFactory?{
+		return null
 	}
 }
