@@ -153,8 +153,10 @@
       <point x="0.0" y="19.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.8677469942498693" x="936.5" y="327.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="0.8249475890985325" x="944.0" y="327.0" />
+  <SelectedNodes>
+    <node>org.springframework.context.ApplicationContext</node>
+  </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

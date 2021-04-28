@@ -47,6 +47,36 @@
       <point x="1127.7733134920643" y="58.0" />
       <point x="69.375" y="19.0" />
     </edge>
+    <edge source="org.springframework.context.support.AbstractApplicationContext" target="org.springframework.beans.factory.BeanFactory">
+      <point x="-88.25" y="-19.0" />
+      <point x="664.7093253968258" y="372.0" />
+      <point x="578.5" y="372.0" />
+      <point x="578.5" y="78.0" />
+      <point x="989.0233134920643" y="78.0" />
+      <point x="-69.375" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.support.AbstractApplicationContext" target="org.springframework.context.ApplicationEventPublisher">
+      <point x="-147.08333333333348" y="-19.0" />
+      <point x="605.8759920634923" y="382.0" />
+      <point x="85.25" y="382.0" />
+      <point x="-85.25" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.support.GenericApplicationContext" target="org.springframework.context.ApplicationContext">
+      <point x="113.66666666666674" y="-19.0" />
+      <point x="886.8950667388171" y="490.0" />
+      <point x="1127.9615800865806" y="490.0" />
+      <point x="1127.9615800865806" y="284.0" />
+      <point x="1190.7601461038962" y="284.0" />
+      <point x="0.0" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.support.AbstractApplicationContext" target="org.springframework.context.ApplicationContext">
+      <point x="147.08333333333326" y="-19.0" />
+      <point x="900.042658730159" y="382.0" />
+      <point x="1116.6845238095239" y="382.0" />
+      <point x="1116.6845238095239" y="274.0" />
+      <point x="1161.537923881674" y="274.0" />
+      <point x="-29.22222222222217" y="19.0" />
+    </edge>
     <edge source="org.springframework.context.ApplicationContext" target="org.springframework.context.ApplicationEventPublisher">
       <point x="-87.66666666666674" y="-19.0" />
       <point x="1103.0934794372297" y="161.0" />
@@ -65,11 +95,49 @@
       <point x="688.5" y="382.0" />
       <point x="-99.5" y="19.0" />
     </edge>
+    <edge source="org.springframework.context.support.AbstractXmlApplicationContext" target="org.springframework.context.ApplicationContext">
+      <point x="96.5" y="-19.0" />
+      <point x="1808.6907467532471" y="264.0" />
+      <point x="1278.4268127705632" y="264.0" />
+      <point x="87.66666666666674" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.support.FileSystemXmlApplicationContext" target="org.springframework.context.support.AbstractApplicationContext">
+      <point x="-153.375" y="-19.0" />
+      <point x="1293.7532467532471" y="676.0" />
+      <point x="409.875" y="676.0" />
+      <point x="409.875" y="460.0" />
+      <point x="601.6736111111115" y="460.0" />
+      <point x="-151.28571428571422" y="19.0" />
+    </edge>
     <edge source="org.springframework.context.annotation.AnnotationConfigApplicationContext" target="org.springframework.context.support.GenericApplicationContext">
       <point x="147.33333333333326" y="-19.0" />
       <point x="861.1034000721504" y="573.0" />
       <point x="858.4784000721504" y="573.0" />
       <point x="85.25" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.support.ClassPathXmlApplicationContext" target="org.springframework.context.ApplicationContext">
+      <point x="149.25" y="-19.0" />
+      <point x="2019.8782467532471" y="676.0" />
+      <point x="1996.25" y="676.0" />
+      <point x="1996.25" y="254.0" />
+      <point x="1307.6490349927853" y="254.0" />
+      <point x="116.88888888888891" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.support.FileSystemXmlApplicationContext" target="org.springframework.context.ApplicationContext">
+      <point x="-51.125" y="-19.0" />
+      <point x="1396.0032467532471" y="666.0" />
+      <point x="1498.8950667388171" y="666.0" />
+      <point x="1498.8950667388171" y="274.0" />
+      <point x="1249.2045905483408" y="274.0" />
+      <point x="58.44444444444446" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.AnnotationConfigApplicationContext" target="org.springframework.context.support.AbstractApplicationContext">
+      <point x="-147.33333333333326" y="-19.0" />
+      <point x="566.4367334054839" y="573.0" />
+      <point x="529.8534000721504" y="573.0" />
+      <point x="529.8534000721504" y="480.0" />
+      <point x="702.5307539682544" y="480.0" />
+      <point x="-50.42857142857133" y="19.0" />
     </edge>
     <edge source="org.springframework.context.support.AbstractRefreshableApplicationContext" target="org.springframework.context.support.AbstractApplicationContext">
       <point x="-158.66666666666663" y="-19.0" />
@@ -82,6 +150,22 @@
       <point x="937.25" y="254.0" />
       <point x="1103.0934794372297" y="254.0" />
       <point x="-87.66666666666663" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.support.AbstractRefreshableApplicationContext" target="org.springframework.context.ApplicationContext">
+      <point x="158.66666666666663" y="-19.0" />
+      <point x="1409.0617334054837" y="490.0" />
+      <point x="1314.2485119047624" y="490.0" />
+      <point x="1314.2485119047624" y="284.0" />
+      <point x="1219.9823683261184" y="284.0" />
+      <point x="29.22222222222217" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.support.ClassPathXmlApplicationContext" target="org.springframework.context.support.AbstractApplicationContext">
+      <point x="-149.25" y="-19.0" />
+      <point x="1721.3782467532471" y="656.0" />
+      <point x="482.27006673881715" y="656.0" />
+      <point x="482.27006673881715" y="470.0" />
+      <point x="652.1021825396829" y="470.0" />
+      <point x="-100.85714285714289" y="19.0" />
     </edge>
     <edge source="org.springframework.context.ApplicationContext" target="org.springframework.beans.factory.HierarchicalBeanFactory">
       <point x="0.0" y="-19.0" />
@@ -118,11 +202,11 @@
       <point x="0.0" y="19.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.7942583732057417" x="1035.0" y="367.0" />
-  <SelectedNodes>
-    <node>org.springframework.context.support.AbstractApplicationContext</node>
-  </SelectedNodes>
-  <Categories />
+  <settings layout="Hierarchic Group" zoom="0.8387559808612441" x="1034.9999999999998" y="367.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
 </Diagram>
