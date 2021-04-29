@@ -12,21 +12,24 @@ import java.util.*
 @ComponentScan(basePackages = ["org.springframework.samples"])
 open class ApplicationConfiguration {
 
-	@Bean(initMethod = "initMethod",name = ["beanInitLifeCycle1", "beanInitLifeCycle2"],destroyMethod = "destroyMethod")
+	@Bean(
+		initMethod = "initMethod",
+		name = ["beanInitLifeCycle1", "beanInitLifeCycle2", "beanInitLifeCycle3"],
+		destroyMethod = "destroyMethod"
+	)
 	open fun beanInitLifeCycle(): BeanInitLifeCycle? {
 		return BeanInitLifeCycle()
 	}
 
 
 	@Bean
-	open fun customBeanFactoryPostProcessor(): CustomBeanFactoryPostProcessor?{
+	open fun customBeanFactoryPostProcessor(): CustomBeanFactoryPostProcessor? {
 		return CustomBeanFactoryPostProcessor()
 
 	}
 
 
-
-	open fun userServiceFactory(): UserServiceFactory?{
+	open fun userServiceFactory(): UserServiceFactory? {
 		return null
 	}
 }
