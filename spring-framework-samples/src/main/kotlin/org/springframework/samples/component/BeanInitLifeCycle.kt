@@ -4,6 +4,7 @@ import org.springframework.beans.factory.DisposableBean
 import org.springframework.beans.factory.InitializingBean
 import org.springframework.stereotype.Component
 import javax.annotation.PostConstruct
+import javax.annotation.PreDestroy
 
 /**
  * bean初始化生命周期
@@ -35,6 +36,11 @@ class BeanInitLifeCycle : InitializingBean, DisposableBean {
 
 	override fun destroy() {
 		println("销毁BeanInitLifeCycle")
+	}
+
+	@PreDestroy
+	fun preDestroy(){
+		println("pre-destory")
 	}
 
 	fun destroyMethod(){
