@@ -12,7 +12,7 @@ import java.util.*
 @ComponentScan(basePackages = ["org.springframework.samples"])
 open class ApplicationConfiguration {
 
-	@Bean(initMethod = "initMethod",name = ["beanInitLifeCycle1", "beanInitLifeCycle2"])
+	@Bean(initMethod = "initMethod",name = ["beanInitLifeCycle1", "beanInitLifeCycle2"],destroyMethod = "destroyMethod")
 	open fun beanInitLifeCycle(): BeanInitLifeCycle? {
 		return BeanInitLifeCycle()
 	}

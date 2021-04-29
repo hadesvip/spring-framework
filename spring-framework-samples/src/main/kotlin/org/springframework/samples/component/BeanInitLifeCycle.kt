@@ -37,6 +37,9 @@ class BeanInitLifeCycle : InitializingBean, DisposableBean {
 		println("销毁BeanInitLifeCycle")
 	}
 
+	fun destroyMethod(){
+		println("destroy-method")
+	}
 
 	var className:String = ""
 
