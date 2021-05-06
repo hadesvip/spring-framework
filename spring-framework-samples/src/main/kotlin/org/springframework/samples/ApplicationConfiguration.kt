@@ -3,6 +3,7 @@ package org.springframework.samples
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
+import org.springframework.samples.component.BeanDestroyLiftCycle
 import org.springframework.samples.component.BeanInitLifeCycle
 import org.springframework.samples.component.CustomBeanFactoryPostProcessor
 import org.springframework.samples.component.UserServiceFactory
@@ -14,11 +15,15 @@ open class ApplicationConfiguration {
 
 	@Bean(
 		initMethod = "initMethod",
-		name = ["beanInitLifeCycle1", "beanInitLifeCycle2", "beanInitLifeCycle3"],
-		destroyMethod = "destroyMethod"
+		name = ["beanInitLifeCycle"]
 	)
 	open fun beanInitLifeCycle(): BeanInitLifeCycle? {
 		return BeanInitLifeCycle()
+	}
+
+	@Bean(destroyMethod = "destroyMethod")
+	open fun beanDestroyLiftCycle(): BeanDestroyLiftCycle?{
+		return BeanDestroyLiftCycle()
 	}
 
 

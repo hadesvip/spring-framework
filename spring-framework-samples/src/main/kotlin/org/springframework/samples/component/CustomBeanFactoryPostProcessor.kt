@@ -9,7 +9,7 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory
  */
 class CustomBeanFactoryPostProcessor : BeanFactoryPostProcessor {
 	override fun postProcessBeanFactory(beanFactory: ConfigurableListableBeanFactory) {
-		val beanInitLife = beanFactory.getBeanDefinition("beanInitLifeCycle1")
+		val beanInitLife = beanFactory.getBeanDefinition("beanInitLifeCycle")
 		println(beanInitLife)
 	}
 }

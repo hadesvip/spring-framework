@@ -16,9 +16,9 @@ public class AppRunTests {
 		AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(
 				ApplicationConfiguration.class);
 
-//		ac.close();
-		String[] aliases = ac.getAliases("beanInitLifeCycle1");
-		Arrays.stream(aliases).forEach(System.out::println);
+		ac.close();
+//		String[] aliases = ac.getAliases("beanInitLifeCycle1");
+//		Arrays.stream(aliases).forEach(System.out::println);
 	}
 
 }
