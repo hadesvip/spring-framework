@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.context.event.ContextRefreshedEvent</OriginalElement>
+  <nodes>
+    <node x="431.25" y="98.0">org.springframework.context.ApplicationEvent</node>
+    <node x="0.0" y="294.0">org.springframework.context.event.ContextClosedEvent</node>
+    <node x="283.0" y="294.0">org.springframework.context.event.ContextRefreshedEvent</node>
+    <node x="600.0" y="294.0">org.springframework.context.event.ContextStoppedEvent</node>
+    <node x="894.0" y="294.0">org.springframework.context.event.ContextStartedEvent</node>
+    <node x="427.625" y="186.0">org.springframework.context.event.ApplicationContextEvent</node>
+    <node x="496.375" y="0.0">java.util.EventObject</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.EventObject" target="java.util.EventObject">
+      <point x="-69.375" y="19.0" />
+      <point x="519.5" y="58.0" />
+      <point x="476.375" y="58.0" />
+      <point x="476.375" y="19.0" />
+      <point x="-92.5" y="-0.0" />
+    </edge>
+    <edge source="org.springframework.context.event.ApplicationContextEvent" target="org.springframework.context.ApplicationEvent">
+      <point x="0.0" y="-19.0" />
+      <point x="587.125" y="161.0" />
+      <point x="612.0" y="161.0" />
+      <point x="60.25" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.event.ContextRefreshedEvent" target="org.springframework.context.event.ApplicationContextEvent">
+      <point x="-74.25" y="-19.0" />
+      <point x="357.25" y="264.0" />
+      <point x="527.3125" y="264.0" />
+      <point x="-59.8125" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationEvent" target="java.util.EventObject">
+      <point x="60.25" y="-19.0" />
+      <point x="23.125" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.event.ContextStoppedEvent" target="org.springframework.context.event.ApplicationContextEvent">
+      <point x="-68.5" y="-19.0" />
+      <point x="668.5" y="274.0" />
+      <point x="607.0625" y="274.0" />
+      <point x="19.9375" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.event.ContextStartedEvent" target="org.springframework.context.event.ApplicationContextEvent">
+      <point x="68.5" y="-19.0" />
+      <point x="1099.5" y="244.0" />
+      <point x="726.6875" y="244.0" />
+      <point x="139.5625" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.event.ApplicationContextEvent" target="java.util.EventObject">
+      <point x="106.33333333333337" y="-19.0" />
+      <point x="693.4583333333334" y="161.0" />
+      <point x="682.75" y="161.0" />
+      <point x="682.75" y="78.0" />
+      <point x="658.25" y="78.0" />
+      <point x="69.375" y="19.0" />
+    </edge>
+    <edge source="org.springframework.context.event.ContextClosedEvent" target="org.springframework.context.event.ApplicationContextEvent">
+      <point x="65.75" y="-19.0" />
+      <point x="197.25" y="254.0" />
+      <point x="487.4375" y="254.0" />
+      <point x="-99.6875" y="19.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="419.5" y="196.0" />
+  <SelectedNodes>
+    <node>org.springframework.context.event.ContextStartedEvent</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
