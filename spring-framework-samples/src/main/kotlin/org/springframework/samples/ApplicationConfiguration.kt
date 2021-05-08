@@ -3,10 +3,7 @@ package org.springframework.samples
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
-import org.springframework.samples.component.BeanDestroyLiftCycle
-import org.springframework.samples.component.BeanInitLifeCycle
-import org.springframework.samples.component.CustomBeanFactoryPostProcessor
-import org.springframework.samples.component.UserServiceFactory
+import org.springframework.samples.component.*
 import java.util.*
 
 @Configuration
@@ -22,8 +19,18 @@ open class ApplicationConfiguration {
 	}
 
 	@Bean(destroyMethod = "destroyMethod")
-	open fun beanDestroyLiftCycle(): BeanDestroyLiftCycle?{
+	open fun beanDestroyLiftCycle(): BeanDestroyLiftCycle? {
 		return BeanDestroyLiftCycle()
+	}
+
+//	@Bean(name = ["lifecycleProcessor"])
+//	open fun customLifecycleProcessor(): CustomLifecycleProcessor? {
+//		return CustomLifecycleProcessor()
+//	}
+
+	@Bean(name = ["customLifeCycle"])
+	open fun customLifeCycle(): CustomLifeCycle? {
+		return CustomLifeCycle()
 	}
 
 
