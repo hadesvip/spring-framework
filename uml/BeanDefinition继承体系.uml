@@ -11,11 +11,11 @@
   </nodes>
   <notes />
   <edges>
-    <edge source="org.springframework.beans.factory.support.GenericBeanDefinition" target="org.springframework.beans.factory.support.AbstractBeanDefinition">
-      <point x="-99.0" y="-19.0" />
-      <point x="626.5" y="166.0" />
-      <point x="497.0" y="166.0" />
-      <point x="77.0" y="19.0" />
+    <edge source="org.springframework.beans.factory.support.ChildBeanDefinition" target="org.springframework.beans.factory.support.AbstractBeanDefinition">
+      <point x="68.5" y="-19.0" />
+      <point x="488.5" y="166.0" />
+      <point x="445.6666666666667" y="166.0" />
+      <point x="25.666666666666686" y="19.0" />
     </edge>
     <edge source="org.springframework.beans.factory.support.AbstractBeanDefinition" target="org.springframework.beans.factory.config.BeanDefinition">
       <point x="77.0" y="-19.0" />
@@ -23,11 +23,11 @@
       <point x="447.25" y="68.0" />
       <point x="27.25" y="19.0" />
     </edge>
-    <edge source="org.springframework.beans.factory.support.ChildBeanDefinition" target="org.springframework.beans.factory.support.AbstractBeanDefinition">
-      <point x="68.5" y="-19.0" />
-      <point x="488.5" y="166.0" />
-      <point x="445.6666666666667" y="166.0" />
-      <point x="25.666666666666686" y="19.0" />
+    <edge source="org.springframework.beans.factory.support.GenericBeanDefinition" target="org.springframework.beans.factory.support.AbstractBeanDefinition">
+      <point x="-99.0" y="-19.0" />
+      <point x="626.5" y="166.0" />
+      <point x="497.0" y="166.0" />
+      <point x="77.0" y="19.0" />
     </edge>
     <edge source="org.springframework.beans.factory.support.RootBeanDefinition" target="org.springframework.beans.factory.support.AbstractBeanDefinition">
       <point x="0.0" y="-19.0" />

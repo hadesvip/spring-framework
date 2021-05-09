@@ -15,7 +15,7 @@ public class ACustomBeanFactoryPostProcessor implements BeanFactoryPostProcessor
 	@Override
 	public void postProcessBeanFactory(
 			ConfigurableListableBeanFactory beanFactory) throws BeansException {
-		BeanDefinition beanInitLifeCycle1 = beanFactory.getBeanDefinition("beanInitLifeCycle1");
+		BeanDefinition beanInitLifeCycle1 = beanFactory.getBeanDefinition("beanInitLifeCycle");
 		System.out.println(beanInitLifeCycle1);
 	}
 }
