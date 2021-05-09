@@ -2,7 +2,6 @@ package org.springframework.samples.component
 
 import org.springframework.beans.factory.InitializingBean
 import javax.annotation.PostConstruct
-import javax.annotation.PreDestroy
 
 /**
  * bean初始化生命周期
@@ -32,5 +31,6 @@ class BeanInitLifeCycle : InitializingBean {
 		println("afterPropertiesSet")
 	}
 	var className:String = ""
+
 
 }

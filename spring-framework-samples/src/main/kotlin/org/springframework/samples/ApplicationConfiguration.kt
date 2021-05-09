@@ -3,6 +3,7 @@ package org.springframework.samples
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
+import org.springframework.samples.component.*
 import org.springframework.context.annotation.Scope
 import org.springframework.samples.component.BeanDestroyLifeCycle
 import org.springframework.samples.component.BeanInitLifeCycle
@@ -20,10 +21,26 @@ open class ApplicationConfiguration {
 
 	@Bean(
 		initMethod = "initMethod",
-		name = ["beanInitLifeCycle"])
+		name = ["beanInitLifeCycle"]
+	)
 	open fun beanInitLifeCycle(): BeanInitLifeCycle? {
 		println("初始化BeanInitLifeCycle...")
 		return BeanInitLifeCycle()
+	}
+
+	@Bean(destroyMethod = "destroyMethod")
+	open fun beanDestroyLiftCycle(): BeanDestroyLiftCycle? {
+		return BeanDestroyLiftCycle()
+	}
+
+//	@Bean(name = ["lifecycleProcessor"])
+//	open fun customLifecycleProcessor(): CustomLifecycleProcessor? {
+//		return CustomLifecycleProcessor()
+//	}
+
+	@Bean(name = ["customLifeCycle"])
+	open fun customLifeCycle(): CustomLifeCycle? {
+		return CustomLifeCycle()
 	}
 
 
