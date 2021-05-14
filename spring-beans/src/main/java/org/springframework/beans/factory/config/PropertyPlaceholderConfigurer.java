@@ -198,7 +198,6 @@ public class PropertyPlaceholderConfigurer extends PlaceholderConfigurerSupport 
 		}
 	}
 
-
 	/**
 	 * Visit each bean definition in the given bean factory and attempt to replace ${...} property
 	 * placeholders with values from the given properties.

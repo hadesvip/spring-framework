@@ -2,6 +2,7 @@ package org.spring.framework.samples;
 
 import java.util.Arrays;
 import javax.annotation.Resource;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.env.Environment;
@@ -22,5 +23,4 @@ public class AppRunTests {
 //		String[] aliases = ac.getAliases("beanInitLifeCycle1");
 //		Arrays.stream(aliases).forEach(System.out::println);
 	}
-
 }

@@ -1,6 +1,5 @@
 package org.springframework.samples.component
 
-import org.springframework.context.Lifecycle
 import org.springframework.context.SmartLifecycle
 
 /**
@@ -9,14 +8,14 @@ import org.springframework.context.SmartLifecycle
  */
 class CustomLifeCycle : SmartLifecycle {
 	override fun start() {
-		TODO("Not yet implemented")
+		println("Lifecycle启动...")
 	}
 
 	override fun stop() {
-		TODO("Not yet implemented")
+		println("Lifecycle停止...")
 	}
 
 	override fun isRunning(): Boolean {
-		TODO("Not yet implemented")
+		return true
 	}
 }
