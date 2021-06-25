@@ -308,8 +308,7 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 				}
 			}
 			//从IOC取出来的对象，它可能是普通单实例也有可能是FactoryBean
-			//FactoryBean实例带&
-			//Factory管理的实例
+			//FactoryBean分FactoryBean(带‘&‘)和Factory管理的实例
 			beanInstance = getObjectForBeanInstance(sharedInstance, name, beanName, null);
 		}
 
