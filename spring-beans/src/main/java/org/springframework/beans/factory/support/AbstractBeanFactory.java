@@ -297,7 +297,6 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 		// Eagerly check singleton cache for manually registered singletons.
 		//获取共享单实例
 		Object sharedInstance = getSingleton(beanName);
-
 		if (sharedInstance != null && args == null) {
 			if (logger.isTraceEnabled()) {
 				if (isSingletonCurrentlyInCreation(beanName)) {
@@ -312,7 +311,10 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
 			//FactoryBean实例带&
 			//Factory管理的实例
 			beanInstance = getObjectForBeanInstance(sharedInstance, name, beanName, null);
-		} else {
+		}
+
+		//缓存中不存在
+		else {
 			// Fail if we're already creating this bean instance:
 			// We're assumably within a circular reference.
 			if (isPrototypeCurrentlyInCreation(beanName)) {
